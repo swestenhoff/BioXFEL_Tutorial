@@ -10,9 +10,9 @@
 
 set sdir=$PWD
 
-set dark_model = $sdir/dark/dark.pdb            
+set dark_model = $sdir/dark.pdb            
 
-set dark_FC = $sdir/dark/refine.mtz               
+set dark_FC = $sdir/refine.mtz               
 
 set light_mtz = $sdir/$2      
 set refi_model = $sdir/$1
