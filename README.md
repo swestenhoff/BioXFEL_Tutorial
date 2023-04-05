@@ -4,6 +4,7 @@ Further, the refined structure will be evaluated to match with the observed (dif
 The data correspnds to the paper Elin et al., 2020, https://doi.org/10.7554/eLife.53514
 
 #Command to setup the github enviornement
+git clone 
 
 Change directory to the quick_check (cd quick_check)
 Tutorial 1: Compute and compare pcc of observed and calculated DED maps
