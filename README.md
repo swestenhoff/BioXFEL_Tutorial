@@ -10,6 +10,30 @@ git clone git@github.com:madanmx/BioXFEL_Tutorial.git
 Change directory to the quick_check (cd quick_check)
 
 Tutorial 1: Compute and compare pcc of observed and calculated DED maps
+Files and folders:
+dark.pdb           #dark refined pdb
+refine.mtz         #refine.mtz with dark phases 
+1ps_extra_25.mtz   #extrapolated mtz file with 25 activation factor
+1ps.pdb            #File from the literature (Elin et. al.,) 
+1ps.pdb_wd.map     #Calculated DED map
+calc_dmap_b2.sh    #Script to calculate calculated DED map
+mock-dark and mock-dark.f #Fortran programs to be used for calculated DED map
+pcc/ 
+  1ps.pdb_wd.map   # calculated 1ps DED map 
+  1ps_wd.map       # observed 1ps DED map 
+  pcc_all.sh       # Script to calculate pcc
+  pcc.inp          # input file generted from the script and will be input to the mock-dark
+    /pcc_out/      # pcc folder 
+      1ps.pdb_wd.map   # calculated 1ps DED map 
+      1ps_wd.map       # observed 1ps DED map 
+      pcc_all.sh   # pcc script   
+      pcc.inp      #input file to the RDiff fortran program
+      /pcc_out/    #Directory created from the pcc script    
+      pcc_summary.txt #all the calues around selected region of comparision will be stored here
+      RDiffCCP4    # Fortran program for pcc calculation
+      RDiffCCP4.f
+ work/             # All the files from the aboec script
+
 
 All the relevant files are in the BioXFEL_directories
 
