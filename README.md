@@ -38,3 +38,24 @@ pcc/
 All the relevant files are in the BioXFEL_directories
 
 Tutorial 2: Refine a better structure
+Files and folders required:
+CBD_phenix.params        #parameter file for the refinement
+/dark/                   #dark structure related files
+    dark.pdb             #dark.pdb  
+    LBV.cif              #cif used to refine dark
+    LBV_modified.cif     #cif with some restratins turned off
+    refine.mtz           #dark refine.mtz
+/extrapolated_mtz/       #extrapolated map directory  
+    1ps_extra_25.mtz
+/full_dmaps/             #observed DED maps
+    1ps_wd.map        
+refine_extra.sh          #script to refine 1ps 
+refine_extra_Bfactorless.sh #script to refine 1ps with no B factor refinement 
+refine_extra_LBV.sh         #script tp refine using LBV.cif without restrains off 
+/scripts/                  
+    calc_dmap_b2.sh         #See tutorial 1
+    mock-dark               #See tutorial 1
+    mock-dark.f             #See tutorial 1
+    pcc_all.sh              #See tutorial 1 
+    RDiffCCP4               #See tutorial 1
+    RDiffCCP4.f             #See tutorial 1
