@@ -8,4 +8,5 @@ The data correspnds to the paper Elin et al., 2020, https://doi.org/10.7554/eLif
 Change directory to the quick_check (cd quick_check)
 Tutorial 1: Compute and compare pcc of observed and calculated DED maps
 
+All the relevant files are in the BioXFEL_directories
 Tutorial 2: Refine a better structure
