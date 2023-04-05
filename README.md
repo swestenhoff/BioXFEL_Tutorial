@@ -32,7 +32,7 @@ pcc/
       pcc_summary.txt #all the calues around selected region of comparision will be stored here
       RDiffCCP4    # Fortran program for pcc calculation
       RDiffCCP4.f
- work/             # All the files from the aboec script
+ work/             # All the files from the above script
 
 
 All the relevant files are in the BioXFEL_directories
@@ -51,7 +51,7 @@ CBD_phenix.params        #parameter file for the refinement
     1ps_wd.map        
 refine_extra.sh          #script to refine 1ps 
 refine_extra_Bfactorless.sh #script to refine 1ps with no B factor refinement 
-refine_extra_LBV.sh         #script tp refine using LBV.cif without restrains off 
+refine_extra_LBV.sh         #script to refine using LBV.cif without restraints off 
 /scripts/                  
     calc_dmap_b2.sh         #See tutorial 1
     mock-dark               #See tutorial 1
