@@ -1,15 +1,18 @@
 # BioXFEL_Tutorial
-This tutorial is intended to refine the light activated structure at 1ps.
-Further, the refined structure will be evaluated to match with the observed (difference electron density) DED map and calculated DED map using the pearson correlation coefficent (pcc).
-The data correspnds to the paper Elin et al., 2020, https://doi.org/10.7554/eLife.53514
+This tutorial is intended to refine a protein structure against a difference electron density (DED) map  at 1ps. We will be using reciprocial space refinement against extrapolated strcture factors.
+The refined structure will be evaluated by comparing the observed and calculated DED maps using the pearson correlation coefficent (pcc).
 
-Command to setup the github enviornement
+The data correspnds to the paper Claesson et al., 2020, https://doi.org/10.7554/eLife.53514
 
+Command to clone the git
 git clone git@github.com:madanmx/BioXFEL_Tutorial.git
 
+
+Tutorial is devided into 2/3? steps.
+
+Step 1: Compute and compare pcc of observed and calculated DED maps. Here the structures (pdbs) where already generated. 
 Change directory to the quick_check (cd quick_check)
 
-Tutorial 1: Compute and compare pcc of observed and calculated DED maps
 Files and folders:
 dark.pdb           #dark refined pdb
 refine.mtz         #refine.mtz with dark phases 
@@ -37,7 +40,9 @@ pcc/
 
 All the relevant files are in the BioXFEL_directories
 
-Tutorial 2: Refine a better structure
+
+Step 2: Refine a better structure
+
 Files and folders required:
 CBD_phenix.params        #parameter file for the refinement
 /dark/                   #dark structure related files
